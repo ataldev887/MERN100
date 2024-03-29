@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: rgb(71, 71, 107);
+            --seccolor: rgb(6, 74, 74);
+            --defpad: 23px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color,pink);
+        }
+        ul{
+            display: flex;
+            padding: var(--defpad);
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li:first-child{
+            --color: red;
+            background-color: var(--color);
+        }
+        /* --color: is used here so it will be boss here i.e it will override bgcolor */
+        .container{
+            background-color: var(--seccolor,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur sapiente magnam soluta, tempora repellat facere velit consequuntur. Fugit tempore inventore libero sint nulla, tenetur quisquam amet odit aut ea corporis saepe, beatae sunt assumenda provident esse minima eaque reprehenderit mollitia! Mollitia perspiciatis nisi inventore.
+    </div>
+</body>
+</html>
