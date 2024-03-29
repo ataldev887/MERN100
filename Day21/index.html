@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Lists</title>
+    <title>Overflow Property</title>
     <style>
-        nav ul{
-            display: flex;
-        }
-        nav ul li{
-            padding: 23px;
-            list-style: none;
-            /* background-color: yellow; */
-            /* list-style-position: inside;  */
-            /* border: 2px solid black; */
-            /* list-style-image: url(data:image/jpeg;base64,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); */
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: scroll;
+            /* overflow-x: hidden;
+            overflow-y: hidden; */
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <div class="box">
+        I am a good boy and i love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur, quas doloribus repellendus necessitatibus aliquam praesentium? Exercitationem id fugit accusamus facilis porro nam corrupti praesentium fuga culpa! Natus, quas! Rem aut, nihil voluptatem quibusdam officia perspiciatis ullam eveniet optio possimus assumenda culpa blanditiis, corrupti dolore.
+    </div>
+    
 </body>
 </html>
