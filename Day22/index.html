@@ -9,33 +9,46 @@
         margin: 0px;
         padding: 0px;
       }
-      .box1 {
-        background-color: aqua;
-        position: absolute;
-        top: 0px;
-      }
-      .box2 {
-        background-color: azure;
-        position: relative;
-      }
-      .box3 {
-        background-color: antiquewhite;
-      }
-      .box4 {
-        background-color: purple;
-      }
       .box {
-        height: 133px;
+        height: 433px;
         width: 80vw;
         padding: 3px;
         margin: 3px;
         border: 2px solid black;
       }
+      .box1 {
+        background-color: aqua;
+        position: absolute;
+        top: 0px;
+        /* position: sticky;
+        height: 111px;
+        width: 100%;
+        margin: 0;
+        padding: 0; */
+      }
+      .box2 {
+        background-color: azure;
+        /* position: relative; */
+      }
+      .box3 {
+        background-color: antiquewhite;
+        /* position: fixed;
+        bottom: 0px;
+        left: 8vw;
+        height: 111px; */
+      }
+      .box4 {
+        background-color: purple;
+      }
+
       .parent{
         padding: 43px;
         margin: 34px;
         border: 3px solid purple;
-        position:absolute;
+        /* position:absolute;
+        transform , filter , or perspective properties can also make an element appear as positioned */
+        filter: invert(10); 
+        /* filter just opposites the color */
       }
     </style>
   </head>
